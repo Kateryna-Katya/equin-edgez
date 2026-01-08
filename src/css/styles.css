@@ -1308,7 +1308,7 @@ a {
 }
 
 .pages__title {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.6rem, 5vw, 3rem);
     margin-bottom: 40px;
     line-height: 1.2;
 }
