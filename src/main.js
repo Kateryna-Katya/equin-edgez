@@ -54,4 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
         initTypewriter();
     }
 });
+    // Инициализация Lucide иконок
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+
+    // GSAP ScrollTrigger для карточек (опционально для более сложной анимации)
+    gsap.from(".about-card", {
+        scrollTrigger: {
+            trigger: ".about__grid",
+            start: "top 80%",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.out"
+    });
 });
