@@ -71,4 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
         stagger: 0.2,
         ease: "power2.out"
     });
+    const featureItems = document.querySelectorAll('.feature-item');
+    
+    featureItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            // Убираем active у всех
+            featureItems.forEach(i => i.classList.remove('active'));
+            // Добавляем текущему
+            item.classList.add('active');
+        });
+    });
 });
