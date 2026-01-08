@@ -1290,3 +1290,97 @@ a {
         text-align: center;
     }
 }
+/* LEGAL PAGES STYLING */
+.pages {
+    padding: 160px 0 100px;
+    /* Отступ сверху под фиксированный хедер */
+    min-height: 80vh;
+}
+
+.pages__content {
+    max-width: 900px;
+    /* Ограничиваем ширину для удобства чтения */
+    margin: 0 auto;
+    background: var(--color-surface);
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+}
+
+.pages__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.pages__block {
+    margin-bottom: 40px;
+}
+
+.pages__block h2 {
+    font-family: 'Sora', sans-serif;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pages__block p {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.pages__list {
+    margin-top: 20px;
+}
+
+.pages__list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.pages__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 12px;
+    height: 2px;
+    background: var(--color-secondary);
+    box-shadow: 0 0 10px var(--color-secondary);
+}
+
+.pages__list li strong {
+    color: var(--color-text);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pages__link {
+    color: var(--color-primary);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.pages__link:hover {
+    color: var(--color-secondary);
+    text-shadow: 0 0 15px var(--color-secondary);
+}
+
+/* Адаптив для страниц */
+@media (max-width: 768px) {
+    .pages {
+        padding: 120px 0 60px;
+    }
+
+    .pages__content {
+        padding: 30px 20px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+}
