@@ -1437,3 +1437,56 @@ a {
     color: var(--color-primary);
     font-weight: 600;
 }
+/* DISCLAIMER SPECIFIC STYLES */
+.pages__block--warning {
+    background: rgba(255, 189, 46, 0.05);
+    /* Легкий золотистый оттенок */
+    border: 1px solid rgba(255, 189, 46, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pages__block--warning::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #ffbd2e;
+    /* Цвет предупреждения */
+}
+
+.warning-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: #ffbd2e;
+}
+
+.warning-header h2 {
+    margin-bottom: 0 !important;
+    color: #ffbd2e !important;
+    font-size: 1.3rem !important;
+}
+
+.warning-header i {
+    width: 24px;
+    height: 24px;
+}
+
+.pages__footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--glass-border);
+    text-align: center;
+}
+
+/* Переопределение strong для лучшей видимости */
+.pages__block strong {
+    color: var(--color-primary);
+    font-weight: 600;
+}
