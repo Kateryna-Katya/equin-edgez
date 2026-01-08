@@ -81,4 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('active');
         });
     });
+    document.addEventListener('mousemove', (e) => {
+    const particles = document.querySelectorAll('.data-particle');
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+
+    particles.forEach(p => {
+        const speed = 20;
+        p.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+    });
+});
 });
