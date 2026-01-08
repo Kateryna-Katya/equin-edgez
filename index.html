@@ -15,7 +15,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  
     <script type="module" crossorigin src="/equin-edgez/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/equin-edgez/assets/styles-gMI9yKfE.css">
+    <link rel="stylesheet" crossorigin href="/equin-edgez/assets/styles-CBIVRNiM.css">
   </head>
   <body>
     <header class="header">
@@ -42,6 +42,22 @@
     </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__backdrop"></div>
+  <div class="mobile-menu__content">
+    <button class="mobile-menu__close" id="menu-close">
+      <i data-lucide="x"></i>
+    </button>
+    <nav class="mobile-menu__nav">
+      <a href="#hero" class="mobile-menu__link">Главная</a>
+      <a href="#about" class="mobile-menu__link">О платформе</a>
+      <a href="#features" class="mobile-menu__link">Преимущества</a>
+      <a href="#innovations" class="mobile-menu__link">Инновации</a>
+      <a href="#blog" class="mobile-menu__link">Блог</a>
+      <a href="#contact" class="btn btn--primary">Связаться</a>
+    </nav>
+  </div>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
@@ -338,6 +354,74 @@
         </div>
     </div>
 </section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+            <div class="contact__info" data-aos="fade-right">
+                <h2 class="section-title text-left">Готовы к <br><span class="text-gradient">апгрейду?</span></h2>
+                <p class="contact__description">
+                    Бесплатная консультация по всем вопросам внедрения ИИ. Получите больше информации о том, как наши
+                    решения могут расширить горизонты вашего проекта.
+                </p>
+
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Пишите нам</span>
+                            <a href="mailto:hello@equin-edgez.blog">hello@equin-edgez.blog</a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <span>Локация</span>
+                            <p>Friedrichstraße 100, Berlin, DE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-container" data-aos="fade-left">
+                <form id="ai-form" class="form">
+                    <div class="form__group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="mail@example.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+49..." required>
+                        </div>
+                    </div>
+
+                    <div class="form__captcha">
+                        <label id="captcha-label">Решите пример: 5 + 3 = ?</label>
+                        <input type="number" id="captcha-input" placeholder="Ваш ответ" required>
+                    </div>
+
+                    <div class="form__checkbox">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Я согласен с <a href="./personal-data-policy.html">политикой обработки
+                                данных</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+
+                    <div id="form-success" class="form__message success">
+                        <i data-lucide="check-circle"></i>
+                        <p>Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
@@ -396,6 +480,17 @@
     </div>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+        <div class="cookie-popup__icon">
+          <i data-lucide="cookie"></i>
+        </div>
+        <p class="cookie-popup__text">
+          Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+        </p>
+        <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+      </div>
+    </div>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
