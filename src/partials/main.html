@@ -291,3 +291,71 @@
         </div>
     </div>
 </section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+            <div class="contact__info" data-aos="fade-right">
+                <h2 class="section-title text-left">Готовы к <br><span class="text-gradient">апгрейду?</span></h2>
+                <p class="contact__description">
+                    Бесплатная консультация по всем вопросам внедрения ИИ. Получите больше информации о том, как наши
+                    решения могут расширить горизонты вашего проекта.
+                </p>
+
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Пишите нам</span>
+                            <a href="mailto:hello@equin-edgez.blog">hello@equin-edgez.blog</a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <span>Локация</span>
+                            <p>Friedrichstraße 100, Berlin, DE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-container" data-aos="fade-left">
+                <form id="ai-form" class="form">
+                    <div class="form__group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="mail@example.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+49..." required>
+                        </div>
+                    </div>
+
+                    <div class="form__captcha">
+                        <label id="captcha-label">Решите пример: 5 + 3 = ?</label>
+                        <input type="number" id="captcha-input" placeholder="Ваш ответ" required>
+                    </div>
+
+                    <div class="form__checkbox">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Я согласен с <a href="./personal-data-policy.html">политикой обработки
+                                данных</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+
+                    <div id="form-success" class="form__message success">
+                        <i data-lucide="check-circle"></i>
+                        <p>Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
